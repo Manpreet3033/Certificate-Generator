@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+        <h1 class='animate-right'>Dynamic Certificate Generator</h1>
+        </div>
+        <div class="user-form">
+            <div>
+                <div class="inner-title">
+                    <h2>Enter Details</h2>
+                </div>
+                <div id="error"></div>
+                <div class="name">
+                    <input type='text' id='user-name' placeholder='Enter Your Name'></input>
+                </div>
+                <div class="gender">
+                    <select name='gender' id='gender'>
+                        <option value="">-Select Gender-</option>
+                        <option value='Male'>Male</option>
+                        <option value='Female'>Female</option>
+                        <option value='other'>Other</option>
+                    </select>
+                </div>
+                <div class="email">
+                    <input type='email' id='email' placeholder='Enter Your Email'></input>
+                </div>
+                <div class="certification">
+                    <input type='text' id='certification' placeholder='Certification Name'></input>
+                </div>
+                <div class="start-date">
+                    <label>Start Date : &nbsp;
+                    <input type='date' id='start-date'></input>
+                    </label>
+                </div>
+                <div class="end-date">
+                    <label>End Date : &nbsp;
+                    <input type='date' id='end-date'></input>
+                    </label>
+                </div>
+                <div class='submit'>
+                    <button type="submit" class="submit-btn" id="submit-btn">Submit</button>
+                </div>
+                <div>
+        </div>
+       </div>
+       <script src="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js"></script>
+       <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+       <script src="./script.js"> </script>
+</body>
+</html>
